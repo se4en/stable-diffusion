@@ -15,8 +15,8 @@ auth_token = os.getenv("API_TOKEN") or True
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
-def dummy_checker(image: Any, *args, **kwargs) -> Tuple[Any, bool]:
-    return image, False
+def dummy_checker(images: Any, *args, **kwargs) -> Tuple[Any, bool]:
+    return images, False
 
 
 pipe = DiffusionPipeline.from_pretrained(
