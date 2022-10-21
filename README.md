@@ -2,7 +2,7 @@
 
 ## How to run
 ```bash
-cat env_temp > .env
+cat env_tmp > .env
 # put your huggingface token inside .env
 
 docker build -t stable_diffusion:latest .
